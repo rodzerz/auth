@@ -21,8 +21,9 @@
 
     {{-- Blade direktīva, kas tiek rādīta viesiem (neautentificētiem lietotājiem) --}}
     @guest
-    <p>Sveiks, viesi! Lūdzu, pieslēdzieties, lai turpinātu.</p>
+    <p>Sveiks, viesi! Lūdzu, pieslēdzieties vai registrejaties, lai turpinātu.</p>
     <a href="{{ route('login.create') }}">Pierakstīšanās</a> <!-- Saiti uz login formu -->
+    <a href="/register">Registresanas</a> <!-- Saiti uz login formu -->
     @endguest
 
 </body>
